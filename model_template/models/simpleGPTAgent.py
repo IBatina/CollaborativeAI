@@ -17,7 +17,7 @@ model_definition.needs_text = True
 model_definition.needs_image = False
 model_definition.can_text = True
 model_definition.can_image = True
-model_definition.modelID = "o3-mini-2025-01-31"
+model_definition.modelID = "o4-mini-2025-04-16"
 
 class ChatAgent():
     def __init__(self, model):
@@ -348,7 +348,7 @@ class CustomAgent(AIModel):
         
         except:
             model = ChatOpenAI(
-                model="o3-mini-2025-01-31",
+                model="o4-mini-2025-04-16",
                 max_tokens=4096,
             ) 
 
